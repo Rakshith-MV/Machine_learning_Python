@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-#!This works for only 2D matrices.!
+#!This works only for 2D matrices.!
 #change m here
 
 m = [[1,4],[2,3]]
