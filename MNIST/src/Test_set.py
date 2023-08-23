@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 import Neural_Networks_batch as nn
 
-f = open("weights1.txt",'r')
+f = open("weights1.txt",'r')  #These weights are measured by training the model for 15000 iterations with alpha 0.001(check data for weights1.txt).
 
 #Flattening the weights and reshaping
 z = f.readlines()
@@ -52,7 +52,7 @@ a,l = (net.accuracy(True))
 
 incorrect= test_X.T
 
-#Didn't really know how to convert list to images, chatgpt came into the rescue;).
+#Didn't really know how to convert list to images, chatgpt came into the rescue;)
 def list_to_image(pixel_list, width, height):
     if len(pixel_list) != width * height:
         raise ValueError("List length doesn't match the image dimensions")
